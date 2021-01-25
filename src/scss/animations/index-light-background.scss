@@ -1,0 +1,12 @@
+.background-light::before {
+    content: "";
+    background-image: url(../assets/lightmode.webp);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.9;
+}

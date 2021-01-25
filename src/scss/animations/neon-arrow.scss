@@ -1,0 +1,61 @@
+// NEON ARROW ANIMATION
+
+.arrowAnimation-dark {
+    transform: scale(2.5);
+    opacity: 0.7;
+    z-index: 4;
+  //   padding-bottom: 0.5rem;
+  &:hover {
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+  }
+
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+  }
+
+
+.arrowAnimation-light {
+    transform: scale(2.5);
+    opacity: 0.9;
+    z-index: 4;
+  &:hover {
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #f81818, 0 0 70px #f81818, 0 0 80px #f81818, 0 0 100px #f81818, 0 0 150px #f81818;
+    }
+    to {
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f81818, 0 0 35px #f81818, 0 0 40px #f81818, 0 0 50px #f81818, 0 0 75px #f81818;
+    }
+  }
+
+  @-moz-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #f81818, 0 0 70px #f81818, 0 0 80px #f81818, 0 0 100px #f81818, 0 0 150px #f81818;
+    }
+    to {
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #f81818, 0 0 35px #f81818, 0 0 40px #f81818, 0 0 50px #f81818, 0 0 75px #f81818;
+    }
+  }

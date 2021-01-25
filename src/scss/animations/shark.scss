@@ -1,0 +1,67 @@
+  .shark-fin {
+      max-width: 50px;
+      max-height: 50px;
+      position: fixed;
+      align-self: center;
+      top: 60vh;
+      left: 10vw;
+      animation-name: sharkAnimation;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: (random(4)+10) + s;
+      opacity: 1;
+  }
+
+  @keyframes sharkAnimation
+  {
+    0% {
+        left: 10vw;
+        top: 60vh;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+    25% {
+        left: 30vw;
+        top: 60vh;
+        max-width: 55px;
+        max-height: 55px;
+    }
+    50% {
+        left: 60vw;
+        top: 65vh;
+        max-width: 60px;
+        max-height: 60px;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+    50.1% {
+        left: 60vw;
+        top: 65vh;
+        max-width: 60px;
+        max-height: 60px;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+    }
+    75% {
+        left: 30vw;
+        top: 60vh;
+        max-width: 55px;
+        max-height: 55px;
+    }
+    99% {
+        left: 10vw;
+        top: 60vh;
+        max-width: 50px;
+        max-height: 50px;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+    }
+    99.1% {
+        left: 10vw;
+        top: 60vh;
+        max-width: 50px;
+        max-height: 50px;
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+    }
+  }

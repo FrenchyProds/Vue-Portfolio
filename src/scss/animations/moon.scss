@@ -1,0 +1,14 @@
+.moonLanding {
+    background-image: url(../assets/moon.png);
+    position: absolute;
+    background-size: contain;
+    transform: scale(0.2);
+    z-index: 2;
+    background-repeat:no-repeat;
+    display: block;
+    top: -160px;
+    right: -160px;
+    left: 160px;
+    bottom: 160px;
+}
+

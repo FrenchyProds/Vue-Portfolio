@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Lato:wght@400;700;900&display=swap');
+
+// --------------------- 
+// =====================
+// -=DARK MODE IMPORTS=-
+// =====================
+// ---------------------
+@import "./animations/dark-background.scss";
+@import "./animations/shooting-stars.scss";
+@import "./animations/neon-arrow.scss";
+@import "./animations/moon.scss";
+
+
+// ---------------------
+// =====================
+// -LIGHT MODE IMPORTS=-
+// =====================
+// ---------------------
+@import "./animations/index-light-background.scss";
+@import "./animations/seagull.scss";
+@import "./animations/shark.scss";
+@import "./animations/underwater-background.scss";
+
+$titleFont: 'Lato', sans-serif;
+$bodyFont: 'Raleway', sans-serif;
+
+header {
+  max-width: 100vw !important;
+}
+
+  .textDisplay {
+    position: relative;
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
+    z-index: 3;
+
+    & .familyName {
+      position: relative;
+      font-size: 3rem;
+    }
+    & .firstName {
+      position: relative;
+      font-size: 5rem;
+    }
+    & p {
+      position: relative;
+      font-size: 1.3rem;
+      font-weight: 600 !important;
+    }
+  }
+  .v-btn__content {
+      font-weight: 500;
+  }
+  .v-main__wrap {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .v-application .ma-3 {
+      line-height: 1.05;
+  }
+
+  .v-application p {
+    font-family: $bodyFont;
+  }
+
+  .page-container {
+    padding: 0;
+  }
+
+  .footerContainer {
+    position: fixed;
+    bottom: 0;
+    max-width: 100vw;
+    width: 100%;
+    border-top: 2px ridge rgb(17, 146, 155);
+  }

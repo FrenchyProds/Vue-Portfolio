@@ -1,0 +1,43 @@
+@keyframes seagullAnimation
+{
+  0% {
+      left: -100vw;
+      opacity: 1;
+  }
+  50% {
+      left: calc( 100% + 100px );
+      opacity: 1;
+  }
+  50.01% {
+      left: calc( 100% + 100px );
+      // top: (random(1000)+50);
+      opacity: 0;
+  }
+  100% {
+      left: calc( 100% + 100px );
+      // top: (random(1000)+50);
+      opacity: 0;
+  }
+}
+
+.s{
+    position:fixed;
+    left:-100px;
+    top:200px;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    transform: scale(0.05);
+    background-image: url('../assets/Seagull-flying-animated.gif');
+    background-size: contain;
+    animation-name: seagullAnimation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+  }
+
+  .seagull-1{
+    top:random(1)-14 + vh;
+    animation-duration: (random(5)+20) + s;
+  }
