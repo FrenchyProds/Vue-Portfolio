@@ -52,6 +52,7 @@ header {
   .v-btn__content {
       font-weight: 500;
   }
+
   .v-main__wrap {
     display: flex;
     flex-direction: row !important;
@@ -75,4 +76,5 @@ header {
     max-width: 100vw;
     width: 100%;
     border-top: 2px ridge rgb(17, 146, 155);
+    z-index: 3;
   }

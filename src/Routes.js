@@ -1,18 +1,20 @@
-import index from './components/index'
-import aboutMe from './components/aboutMe'
-import projects from './components/projects'
-import contact from './components/contact'
+import index from './components/Homepage/index'
+import aboutMe from './components/About-me/aboutMe'
+import projects from './components/projects/projects'
+import contact from './components/contact/contact'
 
 export default [
     {
         path: '/',
         name: 'home',
-        component: index
+        component: index,
+        meta: { transitionName: 'zoom' }
     },
     {
         path: '/about-me',
         name: 'aboutMe',
-        component: aboutMe
+        component: aboutMe,
+        meta: { transitionName: 'zoom' }
     },
     {
         path: '/projects',

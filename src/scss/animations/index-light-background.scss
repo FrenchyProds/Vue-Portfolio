@@ -1,6 +1,6 @@
 .background-light::before {
     content: "";
-    background-image: url(../assets/lightmode.webp);
+    background-image: url('../../assets/lightmode.webp');
     background-size: cover;
     position: absolute;
     top: 0px;

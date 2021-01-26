@@ -2,19 +2,18 @@
   <v-app class="mainApp">
     <v-main flex-row>
       <navbar/>
-      <router-view><index/></router-view>
+      <transition name="zoom" mode="out-in">
+        <router-view><index/></router-view>
+      </transition>
       <footerNav/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
-console.log(localStorage);
-
-import index from './components/index';
-import navbar from './components/navbar';
-import footerNav from './components/footer';
+import index from './components/Homepage/index.vue';
+import navbar from './components/navbar.vue';
+import footerNav from './components/footer.vue';
 
 export default {
   name: 'App',
@@ -24,7 +23,8 @@ export default {
     navbar,
     footerNav,
   },
-  
+  mounted() { 
+  },
 };
 </script>
 
@@ -54,4 +54,31 @@ html {
 .v-card__subtitle, .v-card__text, .v-card__title {
   padding: 0.5rem;
 }
+
+.zoom-enter-active,
+.zoom-leave-active {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-name: zoom;
+}
+
+.zoom-leave-active {
+  animation-direction: reverse;
+}
+
+@keyframes zoom {
+  from {
+    opacity: 0;
+    filter: blur(0px);
+    transform: scale3d(3, 3, 3);
+  }
+  50% {
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  
 </style>

@@ -15,19 +15,19 @@
                 icons-and-text
                 height="110%"
                 >
-                    <v-tab @click="goHome()">
+                    <v-tab to="/">
                         Home
                         <v-icon>mdi-home</v-icon>
                     </v-tab>
-                    <v-tab @click="goToAboutMe()">
+                    <v-tab to="/about-me">
                         About Me
                         <v-icon>mdi-account</v-icon>
                     </v-tab>
-                    <v-tab @click="goToProjects()">
+                    <v-tab to="/projects">
                         Projects
                         <v-icon>mdi-cellphone-link</v-icon>
                     </v-tab>
-                    <v-tab @click="goToContact()">
+                    <v-tab to="/contact">
                         Contact
                         <v-icon>mdi-card-account-phone</v-icon>
                     </v-tab>
@@ -59,19 +59,19 @@
                 icons-and-text
                 height="110%"
                 >
-                    <v-tab @click="goHome()">
+                    <v-tab to="/">
                         Home
                         <v-icon>mdi-home</v-icon>
                     </v-tab>
-                    <v-tab @click="goToAboutMe()">
+                    <v-tab to="/about-me">
                         About Me
                         <v-icon>mdi-account</v-icon>
                     </v-tab>
-                    <v-tab @click="goToProjects()">
+                    <v-tab to="/projects">
                         Projects
                         <v-icon>mdi-cellphone-link</v-icon>
                     </v-tab>
-                    <v-tab @click="goToContact()">
+                    <v-tab to="/contact">
                         Contact
                         <v-icon>mdi-card-account-phone</v-icon>
                     </v-tab>
@@ -95,32 +95,13 @@
 export default {
     data() {
         return {
-            pages: ["home", "aboutMe", "projects", "contact"]
         }
+    },
+    mounted() {
     },
     methods: {
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-    },
-    goHome() {
-        if(this.$router.currentRoute.name !== "home") {
-            this.$router.push({ name: "home" });
-        }
-    },
-    goToAboutMe() {
-        if(this.$router.currentRoute.name !== "aboutMe") {
-            this.$router.push({ name: "aboutMe" })
-        }
-    },
-    goToProjects() {
-        if(this.$router.currentRoute.name !== "projects") {
-            this.$router.push({ name: "projects" })
-        }
-    },
-    goToContact() {
-        if(this.$router.currentRoute.name !== "contact") {
-            this.$router.push({ name: "contact" })
-        }
     },
   }
 }
